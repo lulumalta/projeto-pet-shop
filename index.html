@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pet Shop - Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Pet Shop - Dashboard</h1>
+    <nav>
+      <a href="apresentacao.html">Ir para Apresentação</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <form id="petForm">
+      <input type="text" id="name" placeholder="Nome do Pet" required />
+      <input type="text" id="owner" placeholder="Nome do Dono" required />
+      <input type="date" id="date" required />
+      <textarea id="description" placeholder="Descrição do Pet" required></textarea>
+      <input type="url" id="image" placeholder="URL da Imagem do Pet" required />
+
+      <select id="type" required>
+        <option value="">Tipo do Pet</option>
+        <option value="dog">🐶 Cachorro</option>
+        <option value="cat">🐱 Gato</option>
+        <option value="other">🐾 Outro</option>
+      </select>
+
+      <button type="submit">Cadastrar Pet</button>
+      <button type="button" id="cancelEdit" style="display:none;">Cancelar Edição</button>
+    </form>
+
+    <section id="petList" class="pet-list"></section>
+  </main>
+</body>
+</html>
